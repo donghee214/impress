@@ -84,11 +84,11 @@ var RemoteApi = (function(document, window) {
 
     RemoteApi.prototype.escape = function() {
         if(this.presenter) {
-            var slide = 1;
+            var slide = 2;
             if(this.broadcast) {
                 this.emit("goto", {slide: slide});
             }
-            this.api.goto(1);
+            this.api.goto(2);
         }
     };
 
